@@ -22,7 +22,7 @@ function Submit({ onAddTodo }) {
         text: sub,
         
         
-      priority: priority === "" ? "priority" : priority,
+      priority: priority,
       };
       onAddTodo(newTodo);
       setSub("");
