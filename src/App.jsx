@@ -66,12 +66,12 @@ const handleDeleteAll = () => {
   }, [todos, deleteAll]);
 
 return (
-<div>
-<h1>TodoList</h1>
-<Submit onAddTodo={handleAddTodo} />
-<List todos={todos} removeTodo={deleteTodo} />
-<button className="delall" onClick={handleDeleteAll}>Delete All</button>
-</div>
+  <div className="all">
+    <h1>TodoList</h1>
+    <Submit onAddTodo={handleAddTodo} />
+    <List todos={todos} removeTodo={deleteTodo} />
+    <button className="delall" onClick={handleDeleteAll}>Delete All</button>
+  </div>
 );
 }
 

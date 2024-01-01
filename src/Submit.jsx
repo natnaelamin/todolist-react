@@ -31,22 +31,25 @@ function Submit({ onAddTodo }) {
   };
 
   return (
-    <form>
+    <form className="form">
       <input className="input"
         type="text"
         value={sub}
         onChange={(e) => setSub(e.target.value)}
         placeholder="Type here..."
       />
-      <select  className="prio" value={priority} onChange={handlePriorityChange}>
-        <option disabled>priority</option>
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
-      </select>
-      <button className="btn-sub" type="submit" onClick={handleAddTodo}>
-        Add
-      </button>
+      <div className="formbuttons">
+        <select  className="prio" value={priority} onChange={handlePriorityChange}>
+          <option disabled>priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button className="btn-sub" type="submit" onClick={handleAddTodo}>
+          Add
+        </button>
+      </div>
+      
     </form>
   );
 }

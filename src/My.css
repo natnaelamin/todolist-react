@@ -1,95 +1,164 @@
 body {
-    background-color: rgb(24, 24, 32);
-    justify-content: center;
-    text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+  background-color: rgb(24, 24, 32);
+  justify-content: center;
+  text-align: center;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+@media (min-width: 640px){
+  body {   
+  padding-left: 200px;
+  padding-right: 200px;
   }
-
-  h1{
-    color: whitesmoke;
-  }
-
-  .check{
-    margin-right: 10px;
-  }
-  
-  .lists {
-    background-color: rgb(74, 92, 95);
-    list-style: none;
-    font-size: large;
-    justify-content: space-between; /* Aligns todo and delete button on the same line */
-    padding: 10px 70px; /* Increases the padding on the left and right */
-    /* Light gray background color for todos */
-    margin-bottom: 10px; /* Adds some spacing between todos */
-    display: flex;
-    align-items:flex-start;
-    color: white;
-    
-  }
-
-  label {
-    flex-grow: 1; /* Allows the label to take up remaining space */
-    text-align: left; /*  Aligns the text to the left */
-    margin-left: 10px; /* Adds a small space between the checkbox and the text */
-  }
-
- 
-.star-blue,
-.star-green,
-span {
-  justify-content:flex-end;
-  margin-right: 15px;
 }
 
-  .star-blue {
-    color: rgb(11, 250, 238);
-    font-size: x-large;
-  }
-  
-  .star-green {
-    color: yellow;
-    font-size: x-large;
-  }
-  
-  .btn {
-    background-color: rgb(245, 91, 91);
-    font-size: small;
-    width: 50px;
+h1{
+  color: whitesmoke;
+}
+
+@media (min-width: 640px){
+  .form{
     display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8%;
-  
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
   }
-  
-  .btn-sub {
-    border-radius: 8%;
-    margin-left: 5px;
-    width: 60px;
-    font-size: medium;
-    
-  }
+}
 
-  .prio{
-    font-size: medium;
-  }
-
-  .delall{
-    font-size: large;
-    background-color:rgb(245, 91, 91) ;
-    border-radius: 8%;
-  }
-
+.form{
   
+  text-align: center;
+  margin-bottom: 10px;
+}
+.formbuttons{
+  margin-top: 10px;
+}
+
+@media (min-width: 640px){
   input[type="text"] {
     width: 550px; /* Adjust the width of the input field as needed */
     font-size: medium;
     padding: 10px;
     color: rgb(8, 24, 37);
     margin-right: 20px;
+    border-radius: 5px;
   }
+}
+
+input[type="text"] {
+  width: full; /* Adjust the width of the input field as needed */
+  font-size: medium;
+  padding: 10px;
+  color: rgb(8, 24, 37);
+  border-radius: 5px;
   
+}
+.btn-sub {
+  border-radius: 8%;
+  margin-left: 5px;
+  width: 60px;
+  font-size: medium;
+  
+}
+.prio{
+  font-size: medium;
+}
+
+@media (min-width: 640px){
+  .lists {
+    
+    border-radius: 5px;
+    justify-content: space-between; 
+    padding: 10px 70px;
+    
+    margin-top: 15px; 
+    display: flex;
+    align-items:flex-start;
+    color: white;
+    
+  }
+}
+
+.lists {
+  background-color: rgb(74, 92, 95);
+  list-style: none;
+  font-size: large;
+  justify-content: space-between; 
+  padding: 10px 10px;
+  
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items:flex-start;
+  color: white;
+  
+}
+
+label {
+  flex-grow: 1; /* Allows the label to take up remaining space */
+  text-align: left; 
+  margin-left: 10px; 
+}
+.star-blue,
+.star-green,
+span {
+  justify-content:flex-end;
+  margin-right: 15px;
+}
+.star-blue {
+  color: rgb(11, 250, 238);
+  font-size: x-large;
+}
+
+.star-green {
+  color: yellow;
+  font-size: x-large;
+}
+
+.btn-delete {
+  background-color: rgb(245, 91, 91);
+  font-size: small;
+  width: 50px;
+  display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 8%;
+
+}
+.btn-sub {
+  border-radius: 8%;
+  margin-left: 5px;
+  width: 60px;
+  font-size: medium;
+  
+}
+
+.prio{
+  font-size: medium;
+}
+
+.delall{
+  font-size: medium;
+  background-color:rgb(245, 91, 91) ;
+  border-radius: 8%;
+}
+@media (min-width: 640px){
+  .delall{
+    font-size: large;
+    background-color:rgb(245, 91, 91) ;
+    border-radius: 8%;
+    margin-bottom: 10px;
+  }
+}
+
+ul {
+  padding: 2px;
+}
+@media (min-width: 640px){
   ul {
     padding: 40px;
   }
+}
+
+
+
