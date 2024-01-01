@@ -62,7 +62,8 @@ input[type="text"] {
 }
 .prio{
   font-size: medium;
-  background-color: wheat;
+  background-color: whitesmoke;
+  color: blue;
   
 }
 
